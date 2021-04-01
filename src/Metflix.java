@@ -205,6 +205,39 @@ public class Metflix {
 
         this.series.add(greysAnatomy); //IMPORTARTE//
 
+        Serie peakyBlinders = new Serie();
+        peakyBlinders.nombre = "Peaky Blinders";
+        peakyBlinders.añoLanzamiento = 2013;
+
+        actor = new Actor();
+        actor.nombre = "Cillian Murphy";
+        peakyBlinders.actores.add(actor);
+
+        actor = new Actor();
+        actor.nombre = "Helen McCrory";
+        peakyBlinders.actores.add(actor);
+
+        temporada = new Temporada();
+        temporada.numero = 1;
+
+        episodio = new Episodio();
+        episodio.nombre = "Episodio 1";
+        episodio.numero = 1;
+
+        temporada.episodios.add(episodio);
+
+        episodio = new Episodio();
+        episodio.nombre = "Episodio 2";
+        episodio.numero = 2;
+
+        temporada.episodios.add(episodio);
+
+        peakyBlinders.temporadas.add(temporada);
+        this.series.add(peakyBlinders);
+
+
+
+
     }
     
     //Buscar Serie
