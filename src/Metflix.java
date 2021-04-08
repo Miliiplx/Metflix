@@ -18,7 +18,7 @@ public class Metflix {
         titanic.setDuracion(210); // 3hs 30
 
         Actor actor = new Actor();
-        actor.nombre = "Leo DiCaprio";
+        actor.setNombre("Leo DiCaprio");
 
         // Agrego a la lista de actores del objeto titanic
         titanic.getActores().add(actor); // metodo Add -> agregar a una lista
@@ -36,11 +36,68 @@ public class Metflix {
         // siempre primero antes de reusar
         // re instanciar
         actor = new Actor(); // Creo un nuevo actor, pero referenciado con la variable actor
-        actor.nombre = "Christian Bale";
+        actor.setNombre ("Christian Bale");
 
         batman.getActores().add(actor);
 
         this.peliculas.add(batman);
+
+        //AGREGO NUEVAS PELICULAS 
+
+        Pelicula losJuegosDelHambre = new Pelicula();
+        losJuegosDelHambre.setNombre("Los Juegos del Hambre");
+        losJuegosDelHambre.setAñoLanzamiento(2012);
+        losJuegosDelHambre.setDuracion(142);
+
+        actor = new Actor();
+        actor.setNombre ("Jennifer Lawrence");
+
+        losJuegosDelHambre.getActores().add(actor);
+
+        Director director = new Director();
+        director.setNombre("Gary Ross");
+
+        losJuegosDelHambre.getDirectores().add(director);
+
+        this.peliculas.add(losJuegosDelHambre);
+
+        Pelicula enLlamas = new Pelicula();
+        enLlamas.setNombre("Los juegos del hambre: en llamas");
+        enLlamas.setAñoLanzamiento(2013);
+        enLlamas.setDuracion(145);
+
+        actor = new Actor();
+        actor.setNombre("Jennifer Lawrence");
+
+        enLlamas.getActores().add(actor);
+
+        director = new Director();
+        director.setNombre("Francis Lawrence");
+
+        enLlamas.getDirectores().add(director);
+
+        this.peliculas.add(enLlamas);
+
+        Pelicula sinsajoParte1 = new Pelicula();
+        sinsajoParte1.setNombre("Los juegos del hambre: Sinsajo Parte 1");
+        sinsajoParte1.setAñoLanzamiento(2014);
+        sinsajoParte1.setDuracion(124);
+
+        actor = new Actor();
+        actor.setNombre("Jennifer Lawrence");
+
+        sinsajoParte1.getActores().add(actor);
+
+        director = new Director();
+        director.setNombre("Francis Lawrence");
+
+        sinsajoParte1.getDirectores().add(director);
+
+        this.peliculas.add(sinsajoParte1);
+
+
+
+        
 
         // How I met your mother. Serie
 
@@ -49,12 +106,12 @@ public class Metflix {
         howIMetYM.setAñoLanzamiento(2005);
 
         actor = new Actor();
-        actor.nombre = "Neil Patrick Harris";
+        actor.setNombre("Neil Patrick Harris");
 
         howIMetYM.getActores().add(actor);
 
         actor = new Actor();
-        actor.nombre = "Cobie Smulders";
+        actor.setNombre("Cobie Smulders");
 
         howIMetYM.getActores().add(actor);
 
@@ -117,7 +174,7 @@ public class Metflix {
         bbt.setAñoLanzamiento(2007);
 
         actor = new Actor();
-        actor.nombre = "Kaley Cuoco";
+        actor.setNombre("Kaley Cuoco");
 
         bbt.getActores().add(actor);
 
@@ -150,16 +207,16 @@ public class Metflix {
         greysAnatomy.setAñoLanzamiento(2005);
 
         actor = new Actor();
-        actor.nombre = "Sandra Oh";
+        actor.setNombre("Sandra Oh");
 
         greysAnatomy.getActores().add(actor);
 
         actor = new Actor();
-        actor.nombre = "Ellen Pompeo";
+        actor.setNombre("Ellen Pompeo");
 
         greysAnatomy.getActores().add(actor);
 
-        Director director = new Director();
+        director = new Director();
         director.setNombre("Shonda");
 
         temporada = new Temporada();
@@ -215,11 +272,11 @@ public class Metflix {
         peakyBlinders.setAñoLanzamiento(2013);
 
         actor = new Actor();
-        actor.nombre = "Cillian Murphy";
+        actor.setNombre("Cillian Murphy");
         peakyBlinders.getActores().add(actor);
 
         actor = new Actor();
-        actor.nombre = "Helen McCrory";
+        actor.setNombre("Helen McCrory");
         peakyBlinders.getActores().add(actor);
 
         temporada = new Temporada();

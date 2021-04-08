@@ -53,6 +53,14 @@ public class Contenido {
         this.actores = actores;
     }
 
+    public List<Director> getDirectores(){
+        return this.directores;
+    }
+
+    public void setDirectores(List<Director> directores){
+        this.directores = directores;
+    }
+
 
 
 
