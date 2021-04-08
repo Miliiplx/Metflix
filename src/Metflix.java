@@ -15,7 +15,7 @@ public class Metflix {
 
         titanic.setNombre("Titanic");
         titanic.setAñoLanzamiento(1997);
-        titanic.duracion = 210; // 3hs 30
+        titanic.setDuracion(210); // 3hs 30
 
         Actor actor = new Actor();
         actor.nombre = "Leo DiCaprio";
@@ -30,7 +30,7 @@ public class Metflix {
         Pelicula batman = new Pelicula();
         batman.setNombre("Batman: el caballero de la nohe");
         batman.setAñoLanzamiento(2008);
-        batman.duracion = 152;
+        batman.setDuracion(152);
 
         // No voy a declarar otra variable actor, voy a reusar
         // siempre primero antes de reusar
@@ -85,7 +85,7 @@ public class Metflix {
         temporada.getEpisodios().add(episodio);
 
         // Agrego la temporada
-        howIMetYM.temporadas.add(temporada);
+        howIMetYM.getTemporadas().add(temporada);
 
         // T3
         // creo la temporada
@@ -107,7 +107,7 @@ public class Metflix {
         temporada.getEpisodios().add(episodio);
 
         // Agrego la temporada
-        howIMetYM.temporadas.add(temporada);
+        howIMetYM.getTemporadas().add(temporada);
 
         // Aca esta toda la serie con 2 temporadas y cada una con 2 episodios.
         this.series.add(howIMetYM);
@@ -139,7 +139,7 @@ public class Metflix {
         temporada.getEpisodios().add(episodio);
 
         // Agrego la temporada
-        bbt.temporadas.add(temporada);
+        bbt.getTemporadas().add(temporada);
 
         this.series.add(bbt);
 
@@ -160,7 +160,7 @@ public class Metflix {
         greysAnatomy.getActores().add(actor);
 
         Director director = new Director();
-        director.nombre = "Shonda";
+        director.setNombre("Shonda");
 
         temporada = new Temporada();
         temporada.setNumero(1);
@@ -183,7 +183,7 @@ public class Metflix {
 
         temporada.getEpisodios().add(episodio);
 
-        greysAnatomy.temporadas.add(temporada);
+        greysAnatomy.getTemporadas().add(temporada);
 
         temporada = new Temporada();
         temporada.setNumero(2);
@@ -206,7 +206,7 @@ public class Metflix {
 
         temporada.getEpisodios().add(episodio);
 
-        greysAnatomy.temporadas.add(temporada);
+        greysAnatomy.getTemporadas().add(temporada);
 
         this.series.add(greysAnatomy); // IMPORTARTE//
 
@@ -237,7 +237,7 @@ public class Metflix {
 
         temporada.getEpisodios().add(episodio);
 
-        peakyBlinders.temporadas.add(temporada);
+        peakyBlinders.getTemporadas().add(temporada);
         this.series.add(peakyBlinders);
 
     }
