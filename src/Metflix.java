@@ -13,23 +13,23 @@ public class Metflix {
         Pelicula titanic; // declara una variable que apuntara a una Pelicula
         titanic = new Pelicula(); // Estas ultimoas 2 lineas: Pelicula titanic = new Pelicula();
 
-        titanic.nombre = "Titanic";
-        titanic.añoLanzamiento = 1997;
+        titanic.setNombre("Titanic");
+        titanic.setAñoLanzamiento(1997);
         titanic.duracion = 210; // 3hs 30
 
         Actor actor = new Actor();
         actor.nombre = "Leo DiCaprio";
 
         // Agrego a la lista de actores del objeto titanic
-        titanic.actores.add(actor); // metodo Add -> agregar a una lista
+        titanic.getActores().add(actor); // metodo Add -> agregar a una lista
 
         // Recien ahora estoy agregando a Titanic al catalogo
         this.peliculas.add(titanic);
 
         // Otra Peli
         Pelicula batman = new Pelicula();
-        batman.nombre = "Batman: el caballero de la nohe";
-        batman.añoLanzamiento = 2008;
+        batman.setNombre("Batman: el caballero de la nohe");
+        batman.setAñoLanzamiento(2008);
         batman.duracion = 152;
 
         // No voy a declarar otra variable actor, voy a reusar
@@ -38,25 +38,25 @@ public class Metflix {
         actor = new Actor(); // Creo un nuevo actor, pero referenciado con la variable actor
         actor.nombre = "Christian Bale";
 
-        batman.actores.add(actor);
+        batman.getActores().add(actor);
 
         this.peliculas.add(batman);
 
         // How I met your mother. Serie
 
         Serie howIMetYM = new Serie();
-        howIMetYM.nombre = "How I met your mother";
-        howIMetYM.añoLanzamiento = 2005;
+        howIMetYM.setNombre("How I met your mother");
+        howIMetYM.setAñoLanzamiento(2005);
 
         actor = new Actor();
         actor.nombre = "Neil Patrick Harris";
 
-        howIMetYM.actores.add(actor);
+        howIMetYM.getActores().add(actor);
 
         actor = new Actor();
         actor.nombre = "Cobie Smulders";
 
-        howIMetYM.actores.add(actor);
+        howIMetYM.getActores().add(actor);
 
         // T5:E11
         // creo la temporada
@@ -113,13 +113,13 @@ public class Metflix {
         this.series.add(howIMetYM);
 
         Serie bbt = new Serie();
-        bbt.nombre = "The BigBang Theory";
-        bbt.añoLanzamiento = 2007;
+        bbt.setNombre("The BigBang Theory");
+        bbt.setAñoLanzamiento(2007);
 
         actor = new Actor();
         actor.nombre = "Kaley Cuoco";
 
-        bbt.actores.add(actor);
+        bbt.getActores().add(actor);
 
         // creo la temporada
         temporada = new Temporada();
@@ -146,18 +146,18 @@ public class Metflix {
         // NUEVA SERIE
 
         Serie greysAnatomy = new Serie();
-        greysAnatomy.nombre = "Grey's Anatomy";
-        greysAnatomy.añoLanzamiento = 2005;
+        greysAnatomy.setNombre("Grey's Anatomy");
+        greysAnatomy.setAñoLanzamiento(2005);
 
         actor = new Actor();
         actor.nombre = "Sandra Oh";
 
-        greysAnatomy.actores.add(actor);
+        greysAnatomy.getActores().add(actor);
 
         actor = new Actor();
         actor.nombre = "Ellen Pompeo";
 
-        greysAnatomy.actores.add(actor);
+        greysAnatomy.getActores().add(actor);
 
         Director director = new Director();
         director.nombre = "Shonda";
@@ -211,16 +211,16 @@ public class Metflix {
         this.series.add(greysAnatomy); // IMPORTARTE//
 
         Serie peakyBlinders = new Serie();
-        peakyBlinders.nombre = "Peaky Blinders";
-        peakyBlinders.añoLanzamiento = 2013;
+        peakyBlinders.setNombre("Peaky Blinders");
+        peakyBlinders.setAñoLanzamiento(2013);
 
         actor = new Actor();
         actor.nombre = "Cillian Murphy";
-        peakyBlinders.actores.add(actor);
+        peakyBlinders.getActores().add(actor);
 
         actor = new Actor();
         actor.nombre = "Helen McCrory";
-        peakyBlinders.actores.add(actor);
+        peakyBlinders.getActores().add(actor);
 
         temporada = new Temporada();
         temporada.setNumero(1);
@@ -254,7 +254,7 @@ public class Metflix {
         for (Serie serie : this.series) {
             // pregunto si el nombre de la serie actual
             // que estoy recorriendo es la que necesito
-            if (serie.nombre.equals(nombreABuscar))
+            if (serie.getNombre().equals(nombreABuscar))
                 return serie; // devuelvo esta serie.
         }
         // si llego hasta aca, es porque no encontro la serie.
