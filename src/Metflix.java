@@ -78,7 +78,7 @@ public class Metflix {
         Websodio ws = new Websodio();
         ws.setNombre("Nombre wesodio en internet");
         ws.setNumero(35);
-        ws.link = "http://miepisodios.com/websodio.avi";
+        ws.setLink("http://miepisodios.com/websodio.avi");
 
         temporada.episodios.add(ws);
 

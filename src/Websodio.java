@@ -1,5 +1,13 @@
 public class Websodio extends Episodio {
-    public String link;
+    private String link;
+
+    public String getLink(){
+        return this.link;
+    }
+
+    public void setLink(String link){
+        this.link = link;
+    }
 
     //Redefinicion
     @Override
