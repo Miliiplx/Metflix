@@ -61,7 +61,7 @@ public class Metflix {
         // T5:E11
         // creo la temporada
         Temporada temporada = new Temporada();
-        temporada.numero = 5;
+        temporada.setNumero(5);
 
         // Creo el episodio
         Episodio episodio = new Episodio();
@@ -69,7 +69,7 @@ public class Metflix {
         episodio.setNumero(11);
 
         // vinculo temporada con episodio
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         episodio = new Episodio();
         episodio.setNombre("Definitions");
@@ -80,9 +80,9 @@ public class Metflix {
         ws.setNumero(35);
         ws.setLink("http://miepisodios.com/websodio.avi");
 
-        temporada.episodios.add(ws);
+        temporada.getEpisodios().add(ws);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         // Agrego la temporada
         howIMetYM.temporadas.add(temporada);
@@ -90,7 +90,7 @@ public class Metflix {
         // T3
         // creo la temporada
         temporada = new Temporada();
-        temporada.numero = 3;
+        temporada.setNumero(3);
 
         // Creo el episodio
         episodio = new Episodio();
@@ -98,13 +98,13 @@ public class Metflix {
         episodio.setNumero(1);
 
         // vinculo temporada con episodio
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         episodio = new Episodio();
         episodio.setNombre("Little Boys");
         episodio.setNumero(4);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         // Agrego la temporada
         howIMetYM.temporadas.add(temporada);
@@ -123,7 +123,7 @@ public class Metflix {
 
         // creo la temporada
         temporada = new Temporada();
-        temporada.numero = 1;
+        temporada.setNumero(1);
 
         // Creo el episodio
         episodio = new Episodio();
@@ -131,12 +131,12 @@ public class Metflix {
         episodio.setNumero(1);
 
         // vinculo temporada con episodio
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         episodio = new Episodio();
         episodio.setNombre("The Cooper-Hofstadter Polarizatio");
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         // Agrego la temporada
         bbt.temporadas.add(temporada);
@@ -163,48 +163,48 @@ public class Metflix {
         director.nombre = "Shonda";
 
         temporada = new Temporada();
-        temporada.numero = 1;
+        temporada.setNumero(1);
 
         episodio = new Episodio();
         episodio.setNombre("A Hard Day's Night");
         episodio.setNumero(1);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         episodio = new Episodio();
         episodio.setNombre("The First Cut is the Deepest");
         episodio.setNumero(2);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         episodio = new Episodio();
         episodio.setNombre("Winning a Battle, Losing the War");
         episodio.setNumero(3);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         greysAnatomy.temporadas.add(temporada);
 
         temporada = new Temporada();
-        temporada.numero = 2;
+        temporada.setNumero(2);
 
         episodio = new Episodio();
         episodio.setNombre("Deny, Deny, Deny");
         episodio.setNumero(4);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         episodio = new Episodio();
         episodio.setNombre("Bring the Pain");
         episodio.setNumero(5);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         episodio = new Episodio();
         episodio.setNombre("Into You Like a Train");
         episodio.setNumero(6);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         greysAnatomy.temporadas.add(temporada);
 
@@ -223,19 +223,19 @@ public class Metflix {
         peakyBlinders.actores.add(actor);
 
         temporada = new Temporada();
-        temporada.numero = 1;
+        temporada.setNumero(1);
 
         episodio = new Episodio();
         episodio.setNombre("Episodio 1");
         episodio.setNumero(1);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         episodio = new Episodio();
         episodio.setNombre("Episodio 2");
         episodio.setNumero(2);
 
-        temporada.episodios.add(episodio);
+        temporada.getEpisodios().add(episodio);
 
         peakyBlinders.temporadas.add(temporada);
         this.series.add(peakyBlinders);
