@@ -1,4 +1,19 @@
 public class Pelicula extends Contenido {
+
+    //LOS CONSTRUCTORES NO SE HEREDAN. ENTONCES DEBO CREAR UNO QUE LLAME AL COSTRUCTOR DE LA CLASE MAPADRE
+
+    public Pelicula(String nombre, int añoLanzamiento){
+        super(nombre, añoLanzamiento);
+    }
+
+    //PUEDO CREAR OTRO CONSTRUCTOR QUE INCLUYA LA DURACION DE LA PELICULA. ENTONCES PUEDO USAR UNO U
+    //OTRO CONSTRUCTOR SIN QUE ME DE ERROR.
+
+    public Pelicula(String nombre, int añoLanzamiento, int duracion){
+        super(nombre, añoLanzamiento);
+        this.duracion = duracion;
+    }
+    
     private int duracion; //en minutos
     private Director director;
     private boolean filmadaEnIMAX;
