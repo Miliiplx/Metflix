@@ -1,3 +1,3 @@
-public class Productor extends Persona{
-    
+public class Productor extends Persona {
+
 }

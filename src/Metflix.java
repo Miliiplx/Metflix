@@ -13,8 +13,8 @@ public class Metflix {
         Pelicula titanic; // declara una variable que apuntara a una Pelicula
         titanic = new Pelicula("Titanic", 1997); // Estas ultimoas 2 lineas: Pelicula titanic = new Pelicula();
 
-        //titanic.setNombre("Titanic");
-        //titanic.setAñoLanzamiento(1997);
+        // titanic.setNombre("Titanic");
+        // titanic.setAñoLanzamiento(1997);
         titanic.setDuracion(210); // 3hs 30
 
         Actor actor = new Actor();
@@ -28,29 +28,31 @@ public class Metflix {
 
         // Otra Peli
         Pelicula batman = new Pelicula("Batman: el caballero de la noche", 2008);
-        //batman.setNombre("Batman: el caballero de la noche");
-        //batman.setAñoLanzamiento(2008);
+        // batman.setNombre("Batman: el caballero de la noche");
+        // batman.setAñoLanzamiento(2008);
         batman.setDuracion(152);
 
         // No voy a declarar otra variable actor, voy a reusar
         // siempre primero antes de reusar
         // re instanciar
         actor = new Actor(); // Creo un nuevo actor, pero referenciado con la variable actor
-        actor.setNombre ("Christian Bale");
+        actor.setNombre("Christian Bale");
 
         batman.getActores().add(actor);
 
         this.peliculas.add(batman);
 
-        //AGREGO NUEVAS PELICULAS 
+        // AGREGO NUEVAS PELICULAS
 
         Pelicula losJuegosDelHambre = new Pelicula("Los Juegos del Hambre", 2012);
-        /*losJuegosDelHambre.setNombre("Los Juegos del Hambre");
-        losJuegosDelHambre.setAñoLanzamiento(2012);*/
+        /*
+         * losJuegosDelHambre.setNombre("Los Juegos del Hambre");
+         * losJuegosDelHambre.setAñoLanzamiento(2012);
+         */
         losJuegosDelHambre.setDuracion(142);
 
         actor = new Actor();
-        actor.setNombre ("Jennifer Lawrence");
+        actor.setNombre("Jennifer Lawrence");
 
         losJuegosDelHambre.getActores().add(actor);
 
@@ -62,8 +64,10 @@ public class Metflix {
         this.peliculas.add(losJuegosDelHambre);
 
         Pelicula enLlamas = new Pelicula("Los juegos del hambre: en llamas", 2013);
-        /*enLlamas.setNombre("Los juegos del hambre: en llamas");
-        enLlamas.setAñoLanzamiento(2013);*/
+        /*
+         * enLlamas.setNombre("Los juegos del hambre: en llamas");
+         * enLlamas.setAñoLanzamiento(2013);
+         */
         enLlamas.setDuracion(145);
 
         actor = new Actor();
@@ -79,8 +83,10 @@ public class Metflix {
         this.peliculas.add(enLlamas);
 
         Pelicula sinsajoParte1 = new Pelicula("Los juegos del hambre: Sinsajo Parte 1", 2014);
-        /*sinsajoParte1.setNombre("Los juegos del hambre: Sinsajo Parte 1");
-        sinsajoParte1.setAñoLanzamiento(2014);*/
+        /*
+         * sinsajoParte1.setNombre("Los juegos del hambre: Sinsajo Parte 1");
+         * sinsajoParte1.setAñoLanzamiento(2014);
+         */
         sinsajoParte1.setDuracion(124);
 
         actor = new Actor();
@@ -95,15 +101,13 @@ public class Metflix {
 
         this.peliculas.add(sinsajoParte1);
 
-
-
-        
-
         // How I met your mother. Serie
 
         Serie howIMetYM = new Serie("How I met your mother", 2005);
-        /*howIMetYM.setNombre("How I met your mother");
-        howIMetYM.setAñoLanzamiento(2005);*/
+        /*
+         * howIMetYM.setNombre("How I met your mother");
+         * howIMetYM.setAñoLanzamiento(2005);
+         */
 
         actor = new Actor();
         actor.setNombre("Neil Patrick Harris");
@@ -169,9 +173,10 @@ public class Metflix {
         // Aca esta toda la serie con 2 temporadas y cada una con 2 episodios.
         this.series.add(howIMetYM);
 
-        Serie bbt = new Serie("The BigBang Theory",2007);
-        /*bbt.setNombre("The BigBang Theory");
-        bbt.setAñoLanzamiento(2007);*/
+        Serie bbt = new Serie("The BigBang Theory", 2007);
+        /*
+         * bbt.setNombre("The BigBang Theory"); bbt.setAñoLanzamiento(2007);
+         */
 
         actor = new Actor();
         actor.setNombre("Kaley Cuoco");
@@ -202,9 +207,11 @@ public class Metflix {
 
         // NUEVA SERIE
 
-        Serie greysAnatomy = new Serie("Grey's Anatomy",2005);
-        /*greysAnatomy.setNombre("Grey's Anatomy");
-        greysAnatomy.setAñoLanzamiento(2005);*/
+        Serie greysAnatomy = new Serie("Grey's Anatomy", 2005);
+        /*
+         * greysAnatomy.setNombre("Grey's Anatomy");
+         * greysAnatomy.setAñoLanzamiento(2005);
+         */
 
         actor = new Actor();
         actor.setNombre("Sandra Oh");
@@ -267,9 +274,11 @@ public class Metflix {
 
         this.series.add(greysAnatomy); // IMPORTARTE//
 
-        Serie peakyBlinders = new Serie("Peaky Blinders",2013);
-        /*peakyBlinders.setNombre("Peaky Blinders");
-        peakyBlinders.setAñoLanzamiento(2013);*/
+        Serie peakyBlinders = new Serie("Peaky Blinders", 2013);
+        /*
+         * peakyBlinders.setNombre("Peaky Blinders");
+         * peakyBlinders.setAñoLanzamiento(2013);
+         */
 
         actor = new Actor();
         actor.setNombre("Cillian Murphy");

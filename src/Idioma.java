@@ -2,19 +2,19 @@ public class Idioma {
     private String nombre;
     private String alfabeto;
 
-    public String getNombre(){
+    public String getNombre() {
         return this.nombre;
     }
 
-    public void setNombre(String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getAlfabeto(){
+    public String getAlfabeto() {
         return this.nombre;
     }
 
-    public void setAlfabeto(String alfabeto){
+    public void setAlfabeto(String alfabeto) {
         this.alfabeto = alfabeto;
     }
 }

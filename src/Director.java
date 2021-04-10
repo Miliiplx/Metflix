@@ -2,12 +2,12 @@ public class Director extends Persona {
 
     private String nombre;
 
-    public String getNombre(){
+    public String getNombre() {
         return this.nombre;
     }
 
-    public void setNombre(String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
+
 }
